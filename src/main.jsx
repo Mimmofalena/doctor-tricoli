@@ -9,7 +9,7 @@ import { ThemeProvider } from "@emotion/react";
 const theme = createTheme({
   palette: {
     primary: {
-      main: teal[400],
+      main: teal[500],
     },
     secondary: amber,
   },
