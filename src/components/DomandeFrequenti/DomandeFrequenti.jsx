@@ -1,6 +1,6 @@
-import "./DomandeFrequenti.css";
+import style from './DomandeFrequenti.module.css'
 const DomandeFrequenti = () => {
-  return <div style={{height:'500px', backgroundColor:'yellow'}}>DomandeFrequenti</div>;
+  return <div className={style.prova}>DomandeFrequenti</div>;
 };
 
 export default DomandeFrequenti;
