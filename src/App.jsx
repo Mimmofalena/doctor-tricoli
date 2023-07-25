@@ -24,11 +24,11 @@ function App() {
       <section ref={serviziRef}>
         <Servizi />
       </section>
-      <section ref={contattiRef}>
-        <Contatti />
-      </section>
       <section ref={domandeFrequentiRef}>
         <DomandeFrequenti />
+      </section>
+      <section ref={contattiRef}>
+        <Contatti />
       </section>
     </>
   );
