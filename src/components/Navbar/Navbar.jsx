@@ -37,14 +37,14 @@ function Navbar(props) {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar style={{width:'100vw'}} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="/l"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -76,7 +76,7 @@ function Navbar(props) {
           >
             Dott.ssa Tricoli
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, justifyContent:'end' }}>
             {sections.map((section) => (
               <Button
                 key={section}
