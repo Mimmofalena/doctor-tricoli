@@ -16,6 +16,7 @@ const sections = ["Servizi", "Contatti", "Domande Frequenti"];
 
 function Navbar(props) {
     const [anchorElUser, setAnchorElUser] = React.useState(null);
+    
     const goToSectionHandler = (section) => {
       if (section === "Servizi") {
         props.goToServizi();
@@ -37,8 +38,8 @@ function Navbar(props) {
   };
 
   return (
-    <AppBar style={{width:'100vw'}} position="static">
-      <Container maxWidth="xl">
+    <AppBar >
+      <Container>
         <Toolbar disableGutters>
           <Typography
             variant="h6"
@@ -81,7 +82,7 @@ function Navbar(props) {
               <Button
                 key={section}
                 sx={{ my: 2, color: "white", display: "block" }}
-                onClick={() => goToSectionHandler(section)}
+                onClick={() => {goToSectionHandler(section);}}
               >
                 {section}
               </Button>
