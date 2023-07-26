@@ -38,7 +38,7 @@ function Navbar(props) {
   };
 
   return (
-    <AppBar position="sticky">
+    <AppBar position="fixed">
       <Container>
         <Toolbar disableGutters>
           <Typography

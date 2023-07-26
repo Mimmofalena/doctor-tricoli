@@ -21,7 +21,7 @@ function App() {
         goToDomandefrequenti={() => goToSection(domandeFrequentiRef)}
       />
 
-      <section ref={serviziRef}>
+      <section style={{marginTop:'64px'}} ref={serviziRef}>
         <Servizi />
       </section>
       <section ref={domandeFrequentiRef}>
