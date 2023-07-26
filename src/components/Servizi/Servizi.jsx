@@ -7,6 +7,7 @@ import {
   ListItemText,
   ListItemButton,
   Grid,
+  Typography,
 } from "@mui/material";
 import style from "./Servizi.module.css";
 
@@ -21,8 +22,10 @@ const Servizi = () => {
   ];
   return (
     <Card>
-      <CardHeader sx={{ textAlign: "center" }} title="Servizi Offerti" />
       <CardContent>
+        <Typography variant="h4" component="h2" mb={2}>
+          Servizi Offerti
+        </Typography>
         <List>
           <Grid container>
             {servizi.map((el) => {
