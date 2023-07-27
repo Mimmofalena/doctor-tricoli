@@ -10,7 +10,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import style from "./Navbar.module.css";
 
 const sections = ["Servizi", "Contatti", "Domande Frequenti"];
 
