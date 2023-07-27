@@ -9,7 +9,6 @@ html {
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   scroll-behavior: smooth;
-  color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,16 +19,3 @@ html {
   --primary-text-color: #fff;
   --secondary-text-color: #000;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
