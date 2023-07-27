@@ -4,6 +4,7 @@ import Servizi from "./components/Servizi/Servizi";
 import Contatti from "./components/Contatti/Contatti";
 import DomandeFrequenti from "./components/DomandeFrequenti/DomandeFrequenti";
 import Navbar from "./components/Navbar/Navbar";
+import { Box, Container } from "@mui/material";
 
 function App() {
   const serviziRef = useRef();
@@ -20,16 +21,24 @@ function App() {
         goToContatti={() => goToSection(contattiRef)}
         goToDomandefrequenti={() => goToSection(domandeFrequentiRef)}
       />
+      <Container>
+        <Box
+          component="section"
+          ref={serviziRef}
+          sx={{ marginTop: "64px" }}
+          pt={2}
+          mb={2}
+        >
+          <Servizi />
+        </Box>
 
-      <section style={{marginTop:'64px'}} ref={serviziRef}>
-        <Servizi />
-      </section>
-      <section ref={domandeFrequentiRef}>
-        <DomandeFrequenti />
-      </section>
-      <section ref={contattiRef}>
-        <Contatti />
-      </section>
+        <Box component="section" ref={domandeFrequentiRef} mb={2}>
+          <DomandeFrequenti />
+        </Box>
+        <Box component="section" ref={contattiRef} mb={2}>
+          <Contatti />
+        </Box>
+      </Container>
     </>
   );
 }
