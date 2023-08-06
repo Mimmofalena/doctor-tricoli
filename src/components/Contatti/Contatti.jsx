@@ -13,7 +13,7 @@ const Contatti = () => {
         <Typography mb={2}>
           Per visite, richieste, esami e ricette invia una mail a{" "}
           <Link href="mailto:tricolidoc@gmail.com">
-            mailtricolidoc@gmail.com
+            tricolidoc@gmail.com
           </Link>
         </Typography>
         <Typography mb={2}>

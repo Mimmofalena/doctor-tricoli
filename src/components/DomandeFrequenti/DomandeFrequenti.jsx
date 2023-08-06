@@ -17,7 +17,7 @@ const DomandeFrequenti = () => {
         Qui di seguito vi sono riportate le domande più frequenti. Se pensi vi
         sia altro da aggiungere non esitare a farmelo sapere, critiche
         costruttive sono sempre ben accette. Basta inviare una{" "}
-        <Link href="mailto:tricolidoc@gmail.com">mailtricolidoc@gmail.com</Link>
+        <Link href="mailto:tricolidoc@gmail.com">tricolidoc@gmail.com</Link>
       </Typography>
       {DOMANDE.map((el, index) => {
         return (
