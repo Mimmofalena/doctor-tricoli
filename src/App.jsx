@@ -12,7 +12,7 @@ function App() {
   const domandeFrequentiRef = useRef();
 
   const goToSection = (sectionRef) => {
-    sectionRef.current.scrollIntoView();
+    sectionRef.current.scrollIntoView({ behavior: "smooth"});
   };
   return (
     <>
