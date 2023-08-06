@@ -11,22 +11,22 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 
-const sections = ["Servizi", "Contatti", "Domande Frequenti"];
+const sections = ["Servizi", "Domande Frequenti", "Contatti"];
 
 function Navbar(props) {
-    const [anchorElUser, setAnchorElUser] = React.useState(null);
-    
-    const goToSectionHandler = (section) => {
-      if (section === "Servizi") {
-        props.goToServizi();
-      }
-      if (section === "Contatti") {
-        props.goToContatti();
-      }
-      if (section === "Domande Frequenti") {
-        props.goToDomandefrequenti();
-      }
-    };
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const goToSectionHandler = (section) => {
+    if (section === "Servizi") {
+      props.goToServizi();
+    }
+    if (section === "Contatti") {
+      props.goToContatti();
+    }
+    if (section === "Domande Frequenti") {
+      props.goToDomandefrequenti();
+    }
+  };
 
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
@@ -37,7 +37,7 @@ function Navbar(props) {
   };
 
   return (
-    <AppBar >
+    <AppBar>
       <Container>
         <Toolbar disableGutters>
           <Typography
@@ -76,12 +76,20 @@ function Navbar(props) {
           >
             Dott.ssa Tricoli
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, justifyContent:'end' }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "end",
+            }}
+          >
             {sections.map((section) => (
               <Button
                 key={section}
                 sx={{ my: 2, color: "white", display: "block" }}
-                onClick={() => {goToSectionHandler(section);}}
+                onClick={() => {
+                  goToSectionHandler(section);
+                }}
               >
                 {section}
               </Button>
