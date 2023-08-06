@@ -10,8 +10,10 @@ function App() {
   const serviziRef = useRef();
   const contattiRef = useRef();
   const domandeFrequentiRef = useRef();
+  const navbarHeight = "64px" // Needs this height to offset scroll, otherwise will go a bit lower
 
   const goToSection = (sectionRef) => {
+    sectionRef.current.style.scrollMargin = navbarHeight
     sectionRef.current.scrollIntoView({ behavior: "smooth"});
   };
   return (
