@@ -11,17 +11,17 @@ import {
 } from "@mui/material";
 
 const orari = [
-  { day: "Lunedì", pomeriggio: "15:15 - 17:15" },
+  { day: "Lunedì", pomeriggio: "15:30 - 17:30" },
   { day: "Martedì", mattina: "09:30 - 11:30" },
-  { day: "Mercoledì", pomeriggio: "15:15 - 17:15" },
-  { day: "Giovedì", pomeriggio: "15:15 - 17:15" },
+  { day: "Mercoledì", pomeriggio: "09:30 - 11:30" },
+  { day: "Giovedì", pomeriggio: "15:30 - 17:30" },
   { day: "Venerdì", mattina: "11:00 - 13:00" },
 ];
 
 const OrariStudio = () => {
   return (
     <Box>
-      <TableContainer >
+      <TableContainer>
         <Table aria-label="simple table">
           <TableHead>
             <TableRow sx={{ backgroundColor: "primary.main" }}>
