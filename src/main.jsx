@@ -10,7 +10,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 const theme = createTheme({
   palette: {
     primary: {
-      main: teal[400],
+      main: teal[300],
+      contrastText:'#000000DE'
     },
     secondary: amber,
   },
