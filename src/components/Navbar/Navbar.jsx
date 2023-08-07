@@ -86,7 +86,7 @@ function Navbar(props) {
             <Tooltip title="Open Menu">
               <IconButton
                 onClick={handleOpenUserMenu}
-                sx={{ p: 0, color: "white" }}
+                sx={{ p: 0, color: "primary.contrastText" }}
               >
                 <MenuIcon />
               </IconButton>
