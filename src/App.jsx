@@ -5,6 +5,7 @@ import Contatti from "./components/Contatti/Contatti";
 import DomandeFrequenti from "./components/DomandeFrequenti/DomandeFrequenti";
 import Navbar from "./components/Navbar/Navbar";
 import { Box, Container } from "@mui/material";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const serviziRef = useRef();
@@ -41,6 +42,7 @@ function App() {
           <Contatti />
         </Box>
       </Container>
+      <Footer />
     </>
   );
 }
