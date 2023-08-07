@@ -31,7 +31,7 @@ function Footer() {
            Dott.ssa M. Tricoli  MMG Cod.Reg.145625
           </Typography>
         </Toolbar>
-        <Box sx={{ display: "flex" }} gap={1}>
+        <Box sx={{ display: "flex" }} gap={1} pb={1}>
           <CopyrightIcon />
           <Typography>Powered by Domenico Cucinotta</Typography>
         </Box>
